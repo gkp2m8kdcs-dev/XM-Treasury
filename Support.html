@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="XM Treasury Support — help with accounts, transactions, budgets, portfolios, goals, and more.">
+    <title>Support — XM Treasury</title>
+    <style>
+        :root {
+            --bg: #0b0f14;
+            --surface: #111720;
+            --surface-2: #161e29;
+            --border: #1f2a36;
+            --text: #e6edf5;
+            --muted: #9aa6b3;
+            --accent: #4f8cff;
+            --accent-2: #6ee7b7;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 820px; margin: 0 auto; padding: 56px 24px 96px; }
+        header { padding: 32px 0 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
+        .logo { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent-2); margin-bottom: 14px; }
+        h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+        .subtitle { color: var(--muted); font-size: 16px; }
+        h2 { font-size: 20px; font-weight: 600; margin: 36px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+        h3 { font-size: 16px; font-weight: 600; margin: 22px 0 8px; color: #d8e1ec; }
+        p { color: #cfd6df; margin-bottom: 14px; }
+        ul, ol { color: #cfd6df; padding-left: 22px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+        .contact-box { background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 24px 26px; margin: 20px 0; }
+        .contact-box .label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 8px; }
+        .contact-box a { font-size: 19px; font-weight: 600; }
+        .faq summary { cursor: pointer; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; font-weight: 600; color: #d8e1ec; list-style: none; }
+        .faq summary::-webkit-details-marker { display: none; }
+        .faq summary::after { content: "+"; float: right; color: var(--accent-2); font-size: 20px; line-height: 1; }
+        .faq[open] summary::after { content: "−"; }
+        .faq[open] summary { border-radius: 8px 8px 0 0; border-bottom: none; }
+        .faq .answer { padding: 14px 16px; background: var(--surface-2); border: 1px solid var(--border); border-top: none; border-radius: 0 0 8px 8px; }
+        .faq { margin-bottom: 10px; }
+        .tracking { background: #0f1a14; border: 1px solid #1f3a2a; border-left: 3px solid var(--accent-2); padding: 16px 20px; border-radius: 6px; margin: 24px 0; }
+        .tracking h3 { color: var(--accent-2); margin-top: 0; }
+        footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px; }
+        footer a { color: var(--muted); margin: 0 8px; }
+        footer a:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">XM Treasury</div>
+            <h1>Support</h1>
+            <p class="subtitle">Help, troubleshooting, and how to reach the developer.</p>
+        </header>
+
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-box">
+                <div class="label">Email Support</div>
+                <a href="mailto:huelmelissa1841991@gmail.com">huelmelissa1841991@gmail.com</a>
+                <p style="margin-top: 12px; margin-bottom: 0;">Please include your iOS version, device model, and a short description of the issue. We aim to respond within <strong>2 business days</strong>.</p>
+            </div>
+
+            <h3>What to include in your email</h3>
+            <ol>
+                <li>Your device model (e.g., iPhone 14 Pro).</li>
+                <li>Your iOS version (Settings → General → About).</li>
+                <li>The XM Treasury version number (Settings tab → About in the App).</li>
+                <li>A clear description of what you expected to happen and what actually happened.</li>
+                <li>Screenshots, if relevant — but please do not include any personal financial data in the image.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+
+            <details class="faq">
+                <summary>Where is my data stored?</summary>
+                <div class="answer">
+                    All of your data is stored locally on your iPhone, inside XM Treasury's secure sandbox container. Nothing is uploaded to a server. If you uninstall the App, the data is permanently deleted with it.
+                </div>
+            </details>
+
+            <details class="faq">
+                <summary>Can I back up or transfer my data to a new device?</summary>
+                <div class="answer">
+                    Yes. Use the in-app export feature to create a backup file, then transfer it to your new device using AirDrop, Files, iCloud Drive, or any other method you choose. Restore by re-installing XM Treasury on the new device and importing the file. Because the App does not transmit data automatically, this is the only XM Treasury is involved in.
+                </div>
+            </details>
+
+            <details class="faq">
+                <summary>How do live prices and net worth get updated?</summary>
+                <div class="answer">
+                    They don't — by design. XM Treasury is a journal, not a market data feed. Every holding has a current price that <em>you</em> entered. Updating a single holding, or updating many at once from a list, recalculates that holding's market value, gain/loss, and the portfolio total.
+                </div>
+            </details>
+
+            <details class="faq">
+                <summary>What permissions does the App request, and why?</summary>
+                <div class="answer">
+                    Only two optional permissions are ever requested: Camera, to capture receipt photos, and Photo Library, to attach existing images to transactions. Both are 100% optional. If you decline, the App remains fully functional except for that specific attachment feature.
+                </div>
+            </details>
+
+            <details class="faq">
+                <summary>Is XM Treasury an investment advisor?</summary>
+                <div class="answer">
+                    No. XM Treasury is a personal journaling tool. It does not provide investment advice, does not recommend securities, does not execute trades, and does not act as a custodian. All numbers shown inside the App are computed from the entries you provide. See the <a href="Terms%20of%20Use.html">Terms of Use</a> for the full disclaimer.
+                </div>
+            </details>
+
+            <details class="faq">
+                <summary>I forgot my App settings — how do I reset?</summary>
+                <div class="answer">
+                    Open XM Treasury → Settings → About → Reset Preferences. Note that this does not delete your data, only application preferences. To permanently delete all data, you must uninstall the App.
+                </div>
+            </details>
+
+            <details class="faq">
+                <summary>Does the App track me in any way?</summary>
+                <div class="answer">
+                    No. XM Treasury contains no analytics SDK, no advertising SDK, no crash reporting that transmits data, and no tracking of any kind. Please see the <a href="privacy.html">Privacy Policy</a> and the Tracking Declaration below.
+                </div>
+            </details>
+        </section>
+
+        <div class="tracking">
+            <h3>Tracking Declaration</h3>
+            <p style="margin-bottom: 0;">XM Treasury does not track users. The App does not collect, transmit, sell, or share personal or financial data with the developer or any third party. The App contains no tracking SDKs, no analytics, no advertising identifiers, and no cross-app tracking. Support requests that you send by email are handled directly by the developer and are used only to respond to your question.</p>
+        </div>
+
+        <section>
+            <h2>Status &amp; Compatibility</h2>
+            <p>The current release supports iOS 16.0 and later on iPhone. The App is fully offline-capable; an internet connection is never required to use it.</p>
+            <p>If you encounter a problem after a recent iOS update, please email support and we will work with you to find a fix.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 XM Treasury. All rights reserved.</p>
+            <p>
+                <a href="index.html">Home</a>
+                &nbsp;&middot;&nbsp;
+                <a href="privacy.html">Privacy</a>
+                &nbsp;&middot;&nbsp;
+                <a href="Terms%20of%20Use.html">Terms of Use</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

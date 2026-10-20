@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="XM Treasury — a private, on-device personal money and investment journal for the long-term investor.">
+    <title>XM Treasury — Personal Money &amp; Investment Journal</title>
+    <style>
+        :root {
+            --bg: #0b0f14;
+            --surface: #111720;
+            --surface-2: #161e29;
+            --border: #1f2a36;
+            --text: #e6edf5;
+            --muted: #9aa6b3;
+            --accent: #4f8cff;
+            --accent-2: #6ee7b7;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 880px; margin: 0 auto; padding: 56px 24px 96px; }
+        header { text-align: center; padding: 32px 0 40px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+        .badge { display: inline-block; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent-2); border: 1px solid var(--accent-2); padding: 4px 10px; border-radius: 999px; margin-bottom: 18px; }
+        h1 { font-size: 38px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 10px; }
+        .subtitle { color: var(--muted); font-size: 17px; }
+        h2 { font-size: 22px; font-weight: 600; margin: 40px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+        h3 { font-size: 17px; font-weight: 600; margin: 22px 0 8px; color: #d8e1ec; }
+        p { color: #cfd6df; margin-bottom: 14px; }
+        ul { color: #cfd6df; padding-left: 22px; margin-bottom: 16px; }
+        ul li { margin-bottom: 6px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 18px 0 8px; }
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 18px 16px; }
+        .card h4 { font-size: 14px; font-weight: 600; color: var(--accent-2); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.6px; }
+        .card p { font-size: 14px; color: var(--muted); margin: 0; }
+        .notice { background: var(--surface-2); border-left: 3px solid var(--accent-2); padding: 14px 18px; border-radius: 6px; margin: 18px 0; font-size: 15px; color: #d4dde7; }
+        .tracking { background: #0f1a14; border: 1px solid #1f3a2a; border-left: 3px solid var(--accent-2); padding: 16px 20px; border-radius: 6px; margin: 24px 0; }
+        .tracking h3 { color: var(--accent-2); margin-top: 0; }
+        .meta { color: var(--muted); font-size: 13px; }
+        footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px; }
+        footer a { color: var(--muted); margin: 0 8px; }
+        footer a:hover { color: var(--accent); }
+        @media (max-width: 600px) {
+            h1 { font-size: 30px; }
+            .container { padding: 32px 18px 64px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">Now Available on the App Store</span>
+            <h1>XM Treasury</h1>
+            <p class="subtitle">Personal Money &amp; Investment Journal — Private, On-Device, Offline</p>
+        </header>
+
+        <section>
+            <h2>Overview</h2>
+            <p>XM Treasury is a private, on-device money and investment journal built for people who want to think clearly about their personal wealth without giving an account, brokerage, or analytics firm a copy of their data. It is designed as a daily companion for the long-term investor who journals their positions, tracks spending against budgets, and watches net worth evolve over time.</p>
+            <p>Track every dollar across cash, checking, savings, credit cards, and brokerage accounts. Log income and expense transactions with category tags, attach a photo of a paper receipt, and let XM Treasury build a six-month cash-flow picture from your entries alone. There is no live market feed and no automatic sync — what you see is exactly what you recorded.</p>
+        </section>
+
+        <section>
+            <h2>What You Can Do</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>Accounts</h4>
+                    <p>Cash, checking, savings, credit cards, and brokerage in one place.</p>
+                </div>
+                <div class="card">
+                    <h4>Transactions</h4>
+                    <p>Income and expense entries with categories and photo receipts.</p>
+                </div>
+                <div class="card">
+                    <h4>Portfolio</h4>
+                    <p>Stocks, ETFs, bonds, mutual funds, crypto, and real-estate holdings.</p>
+                </div>
+                <div class="card">
+                    <h4>Budgets</h4>
+                    <p>Weekly, monthly, quarterly, and yearly category limits.</p>
+                </div>
+                <div class="card">
+                    <h4>Goals</h4>
+                    <p>Savings goals with target amounts, dates, and progress.</p>
+                </div>
+                <div class="card">
+                    <h4>Insights</h4>
+                    <p>Cash-flow bars, net worth line, heatmap, and a health radar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>The Journal, Not the Feed</h2>
+            <p>The Portfolio tab is a complete investment journal. Add positions with quantity, average cost, and the current price you entered yourself. XM Treasury calculates market value, cost basis, and unrealized gain or loss for every holding, then rolls them up into a portfolio-wide allocation donut and an at-a-glance movers list. Because every price is your own, you stay in control of the assumptions that drive your numbers.</p>
+            <p>The Insights tab turns the journal into a working dashboard: monthly income and expense bars, a 24-week net worth line chart, a heatmap of daily spending, a category breakdown donut, top-merchant ranking, a savings-rate trend, and a six-axis financial-health radar that scores savings, income stability, goal progress, budget adherence, and diversification from the data you already entered.</p>
+            <p>Customize categories with your own icons and colors. Capture receipts with the camera or photo library and keep them alongside the transactions they support.</p>
+        </section>
+
+        <section>
+            <h2>Privacy by Design</h2>
+            <ul>
+                <li>No login, no account creation, no email collection.</li>
+                <li>No cloud sync, no remote backup, no server backend.</li>
+                <li>No third-party analytics, advertising, or attribution SDKs.</li>
+                <li>No crash reporting, no telemetry, no fingerprinting.</li>
+                <li>All journal data stays in local storage on your device.</li>
+            </ul>
+
+            <div class="tracking">
+                <h3>Tracking Declaration</h3>
+                <p><strong>XM Treasury does not track you.</strong> The app does not collect, transmit, sell, or share any personal or financial data with the developer or any third party. The app contains no tracking SDKs, no analytics, no advertising identifiers (IDFA), and no cross-app tracking. No data leaves your device except when you explicitly choose to export a backup file yourself.</p>
+                <p>This declaration is consistent with Apple's App Store privacy labeling: XM Treasury reports <em>Data Not Collected</em> across all categories.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Disclosures</h2>
+            <div class="notice">
+                XM Treasury is a personal journaling tool, not an investment advisor, broker, exchange, or custodian. It does not provide investment recommendations, execute trades, hold custody of assets, or transmit orders to any venue. The performance, allocations, and analytics shown inside the app are computed from the entries you provide and are illustrative only. Past performance is not indicative of future results. Always consult a qualified financial professional before making investment decisions.
+            </div>
+        </section>
+
+        <section>
+            <h2>What's New in Version 1.0</h2>
+            <p>Initial release. Personal money and investment journal with custom-drawn charts, receipt capture, category budgets, savings goals, on-device storage, and full offline operation. No account, no cloud, no tracking.</p>
+
+            <h3>System Requirements</h3>
+            <ul>
+                <li>iOS 16.0 or later</li>
+                <li>iPhone (camera and photo library access optional)</li>
+                <li>Approximately 30&nbsp;MB of device storage</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Support</h2>
+            <p>Questions, feedback, or a feature request? Reach the developer directly:</p>
+            <p><strong>Email:</strong> <a href="mailto:huelmelissa1841991@gmail.com">huelmelissa1841991@gmail.com</a></p>
+            <p class="meta">We aim to respond within 2 business days.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 XM Treasury. All rights reserved.</p>
+            <p>
+                <a href="Support.html">Support</a>
+                &nbsp;&middot;&nbsp;
+                <a href="privacy.html">Privacy</a>
+                &nbsp;&middot;&nbsp;
+                <a href="Terms%20of%20Use.html">Terms of Use</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
